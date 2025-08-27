@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://unpkg.byted-static.com/latest/byted/arco-config/assets/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arco Design Pro - 开箱即用的中台前端/设计解决方案</title>
+    <script>
+      // 监控页面加载性能
+      window.addEventListener('load', function() {
+        console.log('Page load performance:', performance.timing);
+      });
+      
+      // 监控 Vue 挂载点
+      const observer = new MutationObserver((mutations) => {
+        console.log('DOM mutations:', mutations);
+      });
+      
+      window.addEventListener('DOMContentLoaded', () => {
+        const app = document.getElementById('app');
+        if (app) {
+          observer.observe(app, { 
+            childList: true,
+            subtree: true 
+          });
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

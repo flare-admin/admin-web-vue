@@ -1,0 +1,10 @@
+dist
+coverage
+node_modules
+public
+*.js
+*.ts
+*.jsx
+*.tsx
+*.md
+*.json 

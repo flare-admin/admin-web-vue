@@ -1,0 +1,14 @@
+/*.json
+/*.js
+node_modules
+dist
+public
+*.d.ts
+coverage
+*.local
+
+# 配置文件不忽略
+!.eslintrc.js
+!.prettierrc.js
+!.stylelintrc.js
+!.commitlintrc.js
