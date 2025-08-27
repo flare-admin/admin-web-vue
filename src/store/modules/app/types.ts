@@ -1,4 +1,4 @@
-import { PermissionTreeNode } from '@/types/api/authority';
+import { PermissionTreeNode } from '@/types/api/framework/authority';
 
 export interface AppState {
   theme: string;

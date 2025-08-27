@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/no-named-as-default
 import request from '@/utils/request';
-import type { SystemMetrics, RuntimeMetrics } from '@/types/api/monitor';
+import type { SystemMetrics, RuntimeMetrics } from '@/types/api/support/monitor';
 
 export const monitorApi = {
   // 获取系统指标

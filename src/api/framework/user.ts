@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-named-as-default
 import request from '@/utils/request';
-import type { PermissionTreeNode } from '@/types/api/authority';
-import { UserInfo } from '@/types/api/user';
+import type { PermissionTreeNode } from '@/types/api/framework/authority';
+import { UserInfo } from '@/types/api/framework/user';
 
 const BASE_URL = '/sys/user';
 

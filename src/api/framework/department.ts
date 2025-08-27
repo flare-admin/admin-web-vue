@@ -7,8 +7,8 @@ import {
   MoveDepartmentCommand,
   UpdateDepartmentCommand,
   TransferUserCommand
-} from '@/types/api/department';
-import { GetUsersListRes, GetUsersQuery } from '@/types/api/authority';
+} from '@/types/api/framework/department';
+import { GetUsersListRes, GetUsersQuery } from '@/types/api/framework/authority';
 
 const BASE_URL = '/sys/dept';
 

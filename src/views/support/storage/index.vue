@@ -363,7 +363,7 @@ import {
   IconUpload,
   IconReply
 } from '@arco-design/web-vue/es/icon';
-import type { FileDto, FolderDto, FolderLevel, FolderTreeDto } from '@/types/api/storage';
+import type { FileDto, FolderDto, FolderLevel, FolderTreeDto } from '@/types/api/support/storage';
 import storageApi from '@/api/support/storage';
 import useLoading from '@/hooks/loading';
 import { permissionsApi } from '@/api/framework/authority';

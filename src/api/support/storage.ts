@@ -10,7 +10,7 @@ import {
   ShareFileCommand,
   RenameFolderCommand,
   GetFileListRes
-} from '@/types/api/storage';
+} from '@/types/api/support/storage';
 
 const BASE_URL = '/storage';
 

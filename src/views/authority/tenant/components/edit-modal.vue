@@ -116,7 +116,7 @@
 import { ref, reactive, watch, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { Message } from '@arco-design/web-vue';
-import type { TenantModel } from '@/types/api/authority';
+import type { TenantModel } from '@/types/api/framework/authority';
 import { tenantApi } from '@/api/framework/authority';
 import TimestampPicker from '@/components/timestamp-picker/index.vue';
 

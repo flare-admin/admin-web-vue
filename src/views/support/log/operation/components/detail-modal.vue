@@ -14,7 +14,7 @@
 <script lang="ts" setup>
 import { computed } from 'vue';
 import { useI18n } from '@/locale/useI18n';
-import { OperationLogRecord } from '@/types/api/log';
+import { OperationLogRecord } from '@/types/api/support/log';
 import { formatTimestamp } from '@/filters/date';
 
 const { t } = useI18n();

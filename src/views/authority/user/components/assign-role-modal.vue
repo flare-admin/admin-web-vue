@@ -121,7 +121,7 @@ import { onMounted, ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { Message } from '@arco-design/web-vue';
 import { IconLeft, IconRight } from '@arco-design/web-vue/es/icon';
-import type { RoleModel, UserModel } from '@/types/api/authority';
+import type { RoleModel, UserModel } from '@/types/api/framework/authority';
 import { roleApi, userApi } from '@/api/framework/authority';
 
 const props = defineProps<{

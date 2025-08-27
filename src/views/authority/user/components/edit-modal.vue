@@ -97,7 +97,7 @@
 import { ref, reactive, watch, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { Message } from '@arco-design/web-vue';
-import type { UserModel } from '@/types/api/authority';
+import type { UserModel } from '@/types/api/framework/authority';
 import { userApi } from '@/api/framework/authority';
 
 const props = defineProps<{

@@ -130,7 +130,7 @@ import { ref, reactive } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { Message } from '@arco-design/web-vue';
 import { IconSearch, IconRefresh, IconEye } from '@arco-design/web-vue/es/icon';
-import { OperationLogQueryParams, OperationLogRecord } from '@/types/api/log';
+import { OperationLogQueryParams, OperationLogRecord } from '@/types/api/support/log';
 import logApi from '@/api/support/log';
 import useLoading from '@/hooks/loading';
 import { formatTimestamp } from '@/filters/date';

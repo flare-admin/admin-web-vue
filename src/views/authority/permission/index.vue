@@ -85,7 +85,7 @@ import { Message, Modal } from '@arco-design/web-vue';
 import type { TableColumnData } from '@arco-design/web-vue/es/table/interface';
 import { IconPlus, IconRefresh, IconSearch } from '@arco-design/web-vue/es/icon';
 import { permissionsApi } from '@/api/framework/authority';
-import type { PermissionModel, ResourceModel } from '@/types/api/authority';
+import type { PermissionModel, ResourceModel } from '@/types/api/framework/authority';
 import Permission from '@/components/check-permission/index.vue';
 import { formatTimestamp } from '@/filters/date';
 import EditModal from './components/edit-modal.vue';

@@ -177,7 +177,7 @@ import { useI18n } from 'vue-i18n';
 import { Message, Modal } from '@arco-design/web-vue';
 import { IconPlus, IconRefresh, IconSearch } from '@arco-design/web-vue/es/icon';
 import { tenantApi } from '@/api/framework/authority';
-import type { TenantModel } from '@/types/api/authority';
+import type { TenantModel } from '@/types/api/framework/authority';
 import { useAppStore } from '@/store';
 import { formatTimestamp } from '@/filters/date';
 import EditModal from './components/edit-modal.vue';

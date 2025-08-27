@@ -51,7 +51,7 @@ import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { useI18n } from 'vue-i18n';
 import useLoading from '@/hooks/loading';
 import { monitorApi } from '@/api/support/monitor';
-import type { SystemMetrics, RuntimeMetrics } from '@/types/api/monitor';
+import type { SystemMetrics, RuntimeMetrics } from '@/types/api/support/monitor';
 import { IconStorage, IconBytedanceColor, IconLarkColor } from '@arco-design/web-vue/es/icon';
 import type { ECOption } from '@/types/echarts';
 import formatBytes from '@/utils/format';

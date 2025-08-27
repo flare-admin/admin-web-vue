@@ -67,7 +67,7 @@ import { useI18n } from 'vue-i18n';
 import type { TreeNodeData } from '@arco-design/web-vue';
 import { Message } from '@arco-design/web-vue';
 import { IconLeft, IconRight } from '@arco-design/web-vue/es/icon';
-import type { SimplePermissionTreeNode } from '@/types/api/authority';
+import type { SimplePermissionTreeNode } from '@/types/api/framework/authority';
 import { permissionsApi, tenantApi } from '@/api/framework/authority';
 import { values } from 'lodash';
 

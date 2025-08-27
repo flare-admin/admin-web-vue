@@ -145,7 +145,7 @@ import { ref, onMounted, reactive } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { Message, Modal, TreeNodeData } from '@arco-design/web-vue';
 import useLoading from '@/hooks/loading';
-import type { DepartmentDto } from '@/types/api/department';
+import type { DepartmentDto } from '@/types/api/framework/department';
 import { departmentApi } from '@/api/framework/department';
 import { IconPlus, IconEdit, IconDelete } from '@arco-design/web-vue/es/icon';
 import DepartmentForm from './components/department-form.vue';

@@ -51,7 +51,7 @@
 <script lang="ts" setup>
 import { getCurrentInstance } from 'vue';
 import { useI18n } from 'vue-i18n';
-import type { TenantModel } from '@/types/api/authority';
+import type { TenantModel } from '@/types/api/framework/authority';
 
 defineProps<{
   visible: boolean;

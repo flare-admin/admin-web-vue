@@ -125,8 +125,8 @@ import { ref, reactive, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { Message } from '@arco-design/web-vue';
 import type { FormInstance } from '@arco-design/web-vue';
-import type { DepartmentDto } from '@/types/api/department';
-import type { UserModel } from '@/types/api/authority';
+import type { DepartmentDto } from '@/types/api/framework/department';
+import type { UserModel } from '@/types/api/framework/authority';
 import { departmentApi } from '@/api/framework/department';
 
 const { t } = useI18n();

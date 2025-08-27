@@ -98,7 +98,7 @@ import { ref, reactive } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { Message } from '@arco-design/web-vue';
 import { IconSearch, IconRefresh } from '@arco-design/web-vue/es/icon';
-import { LogQueryParams, LoginLogRecord } from '@/types/api/log';
+import { LogQueryParams, LoginLogRecord } from '@/types/api/support/log';
 import logApi from '@/api/support/log';
 import useLoading from '@/hooks/loading';
 import { formatTimestamp } from '@/filters/date';

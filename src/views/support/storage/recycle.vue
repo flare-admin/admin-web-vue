@@ -126,7 +126,7 @@ import { ref, reactive } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { Message, Modal } from '@arco-design/web-vue';
 import type { TableColumnData } from '@arco-design/web-vue/es/table/interface';
-import { FileDto } from '@/types/api/storage';
+import { FileDto } from '@/types/api/support/storage';
 import storageApi from '@/api/support/storage';
 import useLoading from '@/hooks/loading';
 import formatBytes from '@/utils/format';

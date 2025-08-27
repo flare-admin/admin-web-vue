@@ -6,7 +6,7 @@ import authApi from '@/api/framework/auth';
 import { useAuthStore } from '@/hooks/store';
 import { getToken, setToken, clearToken } from '@/utils/auth';
 import emitter from '@/events/event-bus';
-import { LoginData } from '@/types/api/auth';
+import { LoginData } from '@/types/api/framework/auth';
 import { useAppStore } from '@/store';
 import path from 'path';
 

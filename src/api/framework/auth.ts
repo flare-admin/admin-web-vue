@@ -1,4 +1,4 @@
-import { CaptchaReq, CaptchaResult, LoginData, LoginResult } from '@/types/api/auth';
+import { CaptchaReq, CaptchaResult, LoginData, LoginResult } from '@/types/api/framework/auth';
 // eslint-disable-next-line import/no-named-as-default
 import request from '@/utils/request';
 

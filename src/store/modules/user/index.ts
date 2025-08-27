@@ -3,7 +3,7 @@ import userApi from '@/api/framework/user';
 import authApi from '@/api/framework/auth';
 import { setToken, clearToken } from '@/utils/auth';
 import { removeRouteListener } from '@/utils/route-listener';
-import { LoginData } from '@/types/api/auth';
+import { LoginData } from '@/types/api/framework/auth';
 import { UserState } from './types';
 import useAppStore from '../app';
 

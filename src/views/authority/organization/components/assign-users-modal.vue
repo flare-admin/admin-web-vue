@@ -92,7 +92,7 @@ import { ref, watch, onMounted, reactive, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { Message } from '@arco-design/web-vue';
 import { IconSearch, IconRefresh } from '@arco-design/web-vue/es/icon';
-import type { UserModel } from '@/types/api/authority';
+import type { UserModel } from '@/types/api/framework/authority';
 import { departmentApi } from '@/api/framework/department';
 import useLoading from '@/hooks/loading';
 

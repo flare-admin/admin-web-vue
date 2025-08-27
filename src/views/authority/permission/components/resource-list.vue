@@ -36,7 +36,7 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n';
 import { IconDelete, IconPlus } from '@arco-design/web-vue/es/icon';
-import type { ResourceModel } from '@/types/api/authority';
+import type { ResourceModel } from '@/types/api/framework/authority';
 
 const props = defineProps<{
   modelValue: ResourceModel[];

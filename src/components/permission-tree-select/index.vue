@@ -24,7 +24,7 @@
 import { ref, watch, onMounted } from 'vue';
 import { useI18n } from 'vue-i18n';
 import type { TreeNodeData } from '@arco-design/web-vue';
-import type { SimplePermissionTreeNode } from '@/types/api/authority';
+import type { SimplePermissionTreeNode } from '@/types/api/framework/authority';
 import { permissionsApi } from '@/api/framework/authority';
 import type { LabelValue } from '@arco-design/web-vue/es/tree-select/interface';
 

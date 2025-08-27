@@ -107,7 +107,7 @@ import { Message, Modal } from '@arco-design/web-vue';
 import type { TableColumnData } from '@arco-design/web-vue/es/table/interface';
 import { IconPlus, IconRefresh, IconSearch } from '@arco-design/web-vue/es/icon';
 import { roleApi } from '@/api/framework/authority';
-import type { RoleModel } from '@/types/api/authority';
+import type { RoleModel } from '@/types/api/framework/authority';
 import { formatTimestamp } from '@/filters/date';
 import Permission from '@/components/check-permission/index.vue';
 import EditModal from './components/edit-modal.vue';

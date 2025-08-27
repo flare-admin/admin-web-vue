@@ -97,9 +97,9 @@ import { ref, reactive, watch } from 'vue';
 import type { PropType } from 'vue';
 import { useI18n } from 'vue-i18n';
 import type { FormInstance } from '@arco-design/web-vue';
-import type { RoleModel } from '@/types/api/authority';
+import type { RoleModel } from '@/types/api/framework/authority';
 import { departmentApi } from '@/api/framework/department';
-import type { DepartmentDto } from '@/types/api/department';
+import type { DepartmentDto } from '@/types/api/framework/department';
 import { Modal, Message } from '@arco-design/web-vue';
 import { roleApi } from '@/api/framework/authority';
 

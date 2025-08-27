@@ -18,7 +18,7 @@ import {
   UserModel,
   UserUpdateRequest,
   SimplePermissionTreeNode
-} from '@/types/api/authority';
+} from '@/types/api/framework/authority';
 import type { PageRequest, PageResult } from '@/types/api/base';
 
 const BASE_URL = '/sys';

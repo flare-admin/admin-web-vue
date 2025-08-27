@@ -129,7 +129,7 @@
 import { ref, reactive, computed, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { Message } from '@arco-design/web-vue';
-import type { PermissionModel } from '@/types/api/authority';
+import type { PermissionModel } from '@/types/api/framework/authority';
 import { permissionsApi } from '@/api/framework/authority';
 import PermissionTreeSelect from '@/components/permission-tree-select/index.vue';
 import ResourceList from './resource-list.vue';

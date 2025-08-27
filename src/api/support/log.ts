@@ -3,7 +3,7 @@ import type {
   LogQueryResult,
   OperationLogQueryParams,
   OperationLogQueryResult
-} from '@/types/api/log';
+} from '@/types/api/support/log';
 // eslint-disable-next-line import/no-named-as-default
 import request from '@/utils/request';
 
