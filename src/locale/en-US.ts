@@ -1,26 +1,12 @@
-import localeMessageBox from '@/components/message-box/locale/en-US';
-import localeLogin from '@/views/login/locale/en-US';
-import localeMatcher from '@/views/dashboard/monitor/locale/en-US';
-import localeWorkplace from '@/views/dashboard/workplace/locale/en-US';
-
-// 自定义页面
-import localeAuthority from '@/views/authority/locale/en-US';
-import localeLog from '@/views/support/log/locale/en-US';
-import localeStorage from '@/views/support/storage/locale/en-US';
-import localeDictionary from '@/views/support/dictionary/locale/en-US';
-
 import localeSettings from './en-US/settings';
+import { loadAllLocales } from './utils/locale-loader';
+
+// 使用通用加载器加载所有国际化文件
+const allLocales = loadAllLocales('en-US');
 
 export default {
   ...localeSettings,
-  ...localeMessageBox,
-  ...localeLogin,
-  ...localeWorkplace,
-  ...localeMatcher,
-  ...localeAuthority,
-  ...localeLog,
-  ...localeDictionary,
-  ...localeStorage,
+  ...allLocales,
   'menu.dashboard': 'Dashboard',
   'menu.server.dashboard': 'Dashboard-Server',
   'menu.server.workplace': 'Workplace-Server',

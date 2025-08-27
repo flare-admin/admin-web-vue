@@ -1,27 +1,12 @@
-import localeMessageBox from '@/components/message-box/locale/zh-CN';
-import localeLogin from '@/views/login/locale/zh-CN';
-import localeLog from '@/views/support/log/locale/zh-CN';
-import localeMatcher from '@/views/dashboard/monitor/locale/zh-CN';
-
-import localeWorkplace from '@/views/dashboard/workplace/locale/zh-CN';
-
-// 自定义页面
-import localeAuthority from '@/views/authority/locale/zh-CN';
-import localeStorage from '@/views/support/storage/locale/zh-CN';
-import localeDictionary from '@/views/support/dictionary/locale/zh-CN';
-
 import localeSettings from './zh-CN/settings';
+import { loadAllLocales } from './utils/locale-loader';
+
+// 使用通用加载器加载所有国际化文件
+const allLocales = loadAllLocales('zh-CN');
 
 export default {
   ...localeSettings,
-  ...localeMessageBox,
-  ...localeLogin,
-  ...localeWorkplace,
-  ...localeMatcher,
-  ...localeAuthority,
-  ...localeLog,
-  ...localeStorage,
-  ...localeDictionary,
+  ...allLocales,
   'menu.dashboard': '仪表盘',
   'menu.server.dashboard': '仪表盘-服务端',
   'menu.server.workplace': '工作台-服务端',
