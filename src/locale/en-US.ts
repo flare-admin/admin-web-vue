@@ -7,10 +7,20 @@ import localeWorkplace from '@/views/dashboard/workplace/locale/en-US';
 import localeAuthority from '@/views/authority/locale/en-US';
 import localeLog from '@/views/support/log/locale/en-US';
 import localeStorage from '@/views/support/storage/locale/en-US';
+import localeDictionary from '@/views/support/dictionary/locale/en-US';
 
 import localeSettings from './en-US/settings';
 
 export default {
+  ...localeSettings,
+  ...localeMessageBox,
+  ...localeLogin,
+  ...localeWorkplace,
+  ...localeMatcher,
+  ...localeAuthority,
+  ...localeLog,
+  ...localeDictionary,
+  ...localeStorage,
   'menu.dashboard': 'Dashboard',
   'menu.server.dashboard': 'Dashboard-Server',
   'menu.server.workplace': 'Workplace-Server',
@@ -26,13 +36,7 @@ export default {
   'menu.faq': 'FAQ',
   'navbar.docs': 'Docs',
   'navbar.action.locale': 'Switch to English',
-  ...localeSettings,
-  ...localeMessageBox,
-  ...localeLogin,
-  ...localeWorkplace,
-  ...localeMatcher,
-  ...localeAuthority,
-  ...localeLog,
+
   // Common operations
   'common.operations': 'Operations',
   'common.search': 'Search',
@@ -57,7 +61,8 @@ export default {
   'common.status.deleted': 'Deleted',
   'common.selectAll': 'Select All',
   'menu.monitor.system': 'System Monitor',
-  ...localeStorage,
+ 
   'menu.datav': 'Visual Editor',
-  'menu.datav.editor': 'Editor'
+  'menu.datav.editor': 'Editor',
+  'menu.system': 'System Management',
 };

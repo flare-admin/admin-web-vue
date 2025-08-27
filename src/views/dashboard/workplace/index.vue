@@ -1,13 +1,13 @@
 <template>
   <div class="container">
     <!-- 调试信息 -->
-    <div style="background: #f0f0f0; padding: 10px; margin-bottom: 16px; border-radius: 4px;">
+    <div style="background: #f0f0f0; padding: 10px; margin-bottom: 16px; border-radius: 4px">
       <h3>路由调试信息</h3>
       <p>组件名称: Dashboard Workplace</p>
       <p>加载时间: {{ loadTime }}</p>
       <p>状态: 组件已成功加载</p>
     </div>
-    
+
     <div class="left-side">
       <div class="panel">
         <Banner />

@@ -23,10 +23,7 @@ export default function setupPermissionGuard(router: any) {
       // Handle routing configuration from the server
 
       // 如果没有服务端菜单配置且未加载过，先获取菜单配置
-      if (
-        !menuConfigLoaded &&
-        !WHITE_LIST.find((el) => el.path === to.path)
-      ) {
+      if (!menuConfigLoaded && !WHITE_LIST.find((el) => el.path === to.path)) {
         // eslint-disable-next-line no-console
         console.log('权限守卫 - 首次加载菜单配置');
         const data = await appStore.fetchServerMenuConfig(router);
@@ -35,8 +32,11 @@ export default function setupPermissionGuard(router: any) {
 
       // 检查路由是否存在于路由器中
       const currentRoutes = router.getRoutes();
-      console.log('权限守卫 - 当前所有路由:', currentRoutes.map((r: any) => ({ path: r.path, name: r.name })));
-      
+      console.log(
+        '权限守卫 - 当前所有路由:',
+        currentRoutes.map((r: any) => ({ path: r.path, name: r.name }))
+      );
+
       let matchingRoute = currentRoutes.find((route: any) => route.path === to.path);
       console.log('权限守卫 - 路径匹配结果:', matchingRoute);
 
@@ -50,7 +50,7 @@ export default function setupPermissionGuard(router: any) {
       if (!matchingRoute) {
         matchingRoute = currentRoutes.find((route: any) => {
           // 检查是否是动态路由，路径可能不完全匹配
-          const match = (
+          const match =
             route.path &&
             to.path &&
             (route.path === to.path ||
@@ -60,8 +60,7 @@ export default function setupPermissionGuard(router: any) {
                   (child: any) =>
                     child.path === to.path ||
                     child.path.replace(/\/$/, '') === to.path.replace(/\/$/, '')
-                )))
-          );
+                )));
           if (match) {
             console.log('权限守卫 - 模糊匹配成功:', route.path);
           }
@@ -88,8 +87,11 @@ export default function setupPermissionGuard(router: any) {
 
         // 重新检查路由是否存在
         const updatedRoutes = router.getRoutes();
-        console.log('权限守卫 - 更新后的路由:', updatedRoutes.map((r: any) => ({ path: r.path, name: r.name })));
-        
+        console.log(
+          '权限守卫 - 更新后的路由:',
+          updatedRoutes.map((r: any) => ({ path: r.path, name: r.name }))
+        );
+
         const updatedMatchingRoute = updatedRoutes.find(
           (route: any) => route.path === to.path || route.name === to.name
         );

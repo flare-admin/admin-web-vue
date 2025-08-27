@@ -2,10 +2,9 @@ import { defineStore } from 'pinia';
 import { Notification } from '@arco-design/web-vue';
 import defaultSettings from '@/config/settings.json';
 import userApi from '@/api/framework/user';
-import {addDynamicRoutes} from "@/router/dynamic";
-import {formatRoutes} from "@/router/formatRoutes";
+import { addDynamicRoutes } from '@/router/dynamic';
+import { formatRoutes } from '@/router/formatRoutes';
 import { AppState } from './types';
-
 
 const useAppStore = defineStore('app', {
   state: (): AppState => ({
@@ -63,7 +62,7 @@ const useAppStore = defineStore('app', {
           serverMenu: routes,
           serverMenuTree: routes
         });
-        
+
         if (router) {
           addDynamicRoutes(router, routes);
         }

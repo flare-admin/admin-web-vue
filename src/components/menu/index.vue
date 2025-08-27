@@ -52,7 +52,7 @@ export default defineComponent({
         console.error('Navigation error:', err);
       }
     };
-    
+
     const findMenuOpenKeys = (target: string) => {
       const result: string[] = [];
       let isFind = false;
@@ -74,7 +74,7 @@ export default defineComponent({
       });
       return result;
     };
-    
+
     listenerRouteChange((newRoute) => {
       const { requiresAuth, activeMenu, hideInMenu } = newRoute.meta || {};
       if (requiresAuth && (!hideInMenu || activeMenu)) {
@@ -86,7 +86,7 @@ export default defineComponent({
         selectedKey.value = [activeMenu || menuOpenKeys[menuOpenKeys.length - 1]];
       }
     }, true);
-    
+
     const setCollapse = (val: boolean) => {
       if (appStore.device === 'desktop') appStore.updateSettings({ menuCollapse: val });
     };

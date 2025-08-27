@@ -91,12 +91,12 @@
             />
           </a-form-item>
           <a-form-item
-              field="component"
-              :label="t('authority.permission.searchTable.columns.component')"
+            field="component"
+            :label="t('authority.permission.searchTable.columns.component')"
           >
             <a-input
-                v-model="form.component"
-                :placeholder="t('authority.permission.searchTable.form.component.placeholder')"
+              v-model="form.component"
+              :placeholder="t('authority.permission.searchTable.form.component.placeholder')"
             />
           </a-form-item>
         </a-col>

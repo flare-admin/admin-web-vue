@@ -1,5 +1,4 @@
-import { DEFAULT_LAYOUT } from "./routes/base";
-
+import { DEFAULT_LAYOUT } from './routes/base';
 
 export const modules = import.meta.glob('@/views/**/*.vue');
 
@@ -8,7 +7,7 @@ export const modules = import.meta.glob('@/views/**/*.vue');
 // 将路径转换为驼峰命名
 function pathToCamelCase(path: string): string {
   if (!path) return '';
-  
+
   // 移除开头的斜杠，然后转换为驼峰命名
   return path
     .replace(/^\//, '') // 移除开头的斜杠
@@ -22,7 +21,7 @@ export function formatRoutes(menus: any[]): any[] {
     const name = menu.path ? pathToCamelCase(menu.path) : menu.code;
     // path 必须处理成 / 开头
     const path = menu.path.startsWith('/') ? menu.path : `/${menu.path}`;
-    
+
     const route: any = {
       path,
       name,
@@ -36,10 +35,9 @@ export function formatRoutes(menus: any[]): any[] {
       }
     };
 
-
     if (menu.parentId === 0) {
       route.component = DEFAULT_LAYOUT;
-    }else if (menu.component) {
+    } else if (menu.component) {
       const componentPath = `/src/views/${menu.component}.vue`;
       console.log(componentPath);
       if (modules[componentPath]) {

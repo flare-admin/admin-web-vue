@@ -73,7 +73,6 @@ export default {
   'storage.folder.root': '根目录',
   'storage.file.downloading': '正在下载文件...',
   'storage.file.downloadSuccess': '下载成功',
-  'storage.file.downloadError': '下载失败',
   'storage.file.uploading': '正在上传文件...',
   'storage.file.batchDownload': '批量下载',
   'storage.file.previewing': '正在加载预览...',

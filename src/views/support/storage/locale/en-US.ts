@@ -37,7 +37,6 @@ export default {
   'storage.file.loadError': 'Failed to load file list',
   'storage.file.downloading': 'Downloading...',
   'storage.file.downloadSuccess': 'Download successful',
-  'storage.file.downloadError': 'Download failed',
   'storage.file.uploading': 'Uploading...',
   'storage.file.batchDownload': 'Batch Download',
   'storage.file.previewing': 'Loading preview...',
