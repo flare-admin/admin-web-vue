@@ -46,7 +46,7 @@ export default defineComponent({
       // Trigger router change
       try {
         await router.push({
-          name: item.id.toString()
+          name: item.name
         });
       } catch (err) {
         console.error('Navigation error:', err);

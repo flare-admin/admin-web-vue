@@ -58,12 +58,12 @@ const useAppStore = defineStore('app', {
     async fetchServerMenuConfig(router?: any) {
       try {
         const data = await userApi.getUserMenus();
-        this.$patch({
-          serverMenu: data,
-          serverMenuTree: data
-        });
-
         const routes = formatRoutes(data);
+        this.$patch({
+          serverMenu: routes,
+          serverMenuTree: routes
+        });
+        
         if (router) {
           addDynamicRoutes(router, routes);
         }

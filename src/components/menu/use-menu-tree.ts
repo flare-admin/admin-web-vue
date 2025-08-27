@@ -11,7 +11,7 @@ export default function useMenuTree() {
   const appRoute = computed(() => {
     if (appStore.menuFromServer) {
       // 如果使用服务端菜单，返回服务端菜单树
-      return appStore.serverMenuTree;
+      return appStore.serverMenu;
     }
     return appClientMenus;
   });

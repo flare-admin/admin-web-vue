@@ -30,7 +30,6 @@ export default function setupPermissionGuard(router: any) {
         // eslint-disable-next-line no-console
         console.log('权限守卫 - 首次加载菜单配置');
         const data = await appStore.fetchServerMenuConfig(router);
-        console.log('权限守卫 - 菜单配置数据:', data);
         menuConfigLoaded = true; // 标记已加载
       }
 
