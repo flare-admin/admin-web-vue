@@ -140,6 +140,7 @@
             :title="t('dictionary.table.operations')"
             data-index="operations"
             :width="120"
+            fixed="right"
           >
             <template #cell="{ record }">
               <a-space>
