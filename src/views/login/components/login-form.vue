@@ -102,8 +102,8 @@ const captcha = reactive({
 });
 
 const form = reactive({
-  username: '',
-  password: '',
+  username: '15888888888',
+  password: 'Super123',
   captchaCode: '',
   captchaKey: ''
 });
