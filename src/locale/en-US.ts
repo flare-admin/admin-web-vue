@@ -47,8 +47,8 @@ export default {
   'common.status.deleted': 'Deleted',
   'common.selectAll': 'Select All',
   'menu.monitor.system': 'System Monitor',
- 
+
   'menu.datav': 'Visual Editor',
   'menu.datav.editor': 'Editor',
-  'menu.system': 'System Management',
+  'menu.system': 'System Management'
 };

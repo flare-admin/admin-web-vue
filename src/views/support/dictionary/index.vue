@@ -131,7 +131,7 @@
             data-index="i18nKey"
             :width="180"
           />
-          <a-table-column :title="t('dictionary.table.createdAt')" data-index="createdAt">
+          <a-table-column :title="t('dictionary.table.createdAt')" data-index="createdAt" :width="180">
             <template #cell="{ record }">
               {{ formatTimestamp(record.createdAt) }}
             </template>

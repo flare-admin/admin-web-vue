@@ -12,7 +12,7 @@
     <keep-alive v-else :include="cacheList" :max="20">
       <component :is="Component" :key="route.fullPath" />
     </keep-alive>
-  </router-view> 
+  </router-view>
 </template>
 
 <script lang="ts" setup>

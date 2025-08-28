@@ -22,7 +22,7 @@ export default {
   'menu.faq': '常见问题',
   'navbar.docs': '文档中心',
   'navbar.action.locale': '切换为中文',
- 
+
   // 通用操作按钮
   'common.operations': '操作',
   'common.search': '搜索',
@@ -49,5 +49,5 @@ export default {
   'menu.monitor.system': '系统监控',
   'menu.datav': '可视化编辑器',
   'menu.datav.editor': '编辑器',
-  'menu.system': '系统管理',
+  'menu.system': '系统管理'
 };
